@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebReate</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Link for scrolling effet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="imgs/blog1-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #171717;
+        color: #fff;
+        font-family: "Josefin Sans", sans-serif;
+        overflow-x: hidden;
+      }
+
+      .solution {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .solution p {
+        /* margin-top: 10px; */
+        margin-bottom: 20px;
+      }
+      .colored-heading {
+        color: #ff8833;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      .coloredHeading {
+        color: #ff8833;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 3rem;
+      }
+
+      .solutionBox {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        width: 95%;
+        height: 60%;
+        gap: 15px;
+      }
+
+      .solutionBox .grid-item {
+        height: 100%;
+        width: 250px;
+        box-shadow: 2px 2px 8px #3a3a3a;
+        /* box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.47); */
+        border-radius: 8px;
+        background-color: #000;
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .success {
+        display: flex;
+        flex-direction: row;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 0 20px;
+      }
+
+      .leftSide {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+      }
+      .leftSide h1 {
+        font-size: 2.5rem;
+      }
+      .leftSide h5 {
+        font-size: 1.5rem;
+        margin-top: 15px;
+      }
+      .leftSide p {
+        font-size: 1.5rem;
+        margin-top: 15px;
+      }
+      .rightSide {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .sectionOne {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        width: 50%;
+        justify-content: flex-end;
+        padding: 10px;
+        align-items: center;
+        gap: 20px;
+      }
+      .sectionOne .grid-item {
+        height: 170px;
+        box-shadow: 2px 2px 8px #3a3a3a;
+        width: 350px;
+        /* box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.47); */
+        border-radius: 8px;
+        background-color: #000;
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+      }
+      .sectionTwo {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        width: 50%;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+      }
+      .sectionTwo .grid-item {
+        height: 170px;
+        box-shadow: 2px 2px 8px #3a3a3a;
+        width: 350px;
+        /* box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.47); */
+        border-radius: 8px;
+        background-color: #000;
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        /* justify-content: center; */
+        align-items: center;
+        margin-top: 15px;
+      }
+
+      .col1 {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        background-color: #000;
+      }
+      .col2 {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        padding: 10px;
+        background-color: #000;
+      }
+      .sectionOne .col1 img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+      }
+      .sectionTwo .col1 img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+      }
+      .col1 img {
+        width: 90%;
+        height: 10%;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      .col1 img {
+        width: 90%;
+        height: 10%;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      .slider {
+        width: 100%;
+        height: 100vh;
+      }
+      .col2 p {
+        font-size: 0.9rem;
+        background-color: #000;
+      }
+      .col1 h6 {
+        background-color: #000;
+      }
+      .salesTeam {
+        display: flex;
+        flex-direction: column;
+        /* height: 50vh; */
+        /* justify-content: center; */
+        align-items: center;
+        margin: 30px 0;
+        padding: 0 20px;
+        /* width: 95%; */
+      }
+      .salesBox {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        /* height: 60%; */
+        gap: 15px;
+        width: 95%;
+      }
+      .saleMobile {
+        display: none;
+      }
+      .salesBox .grid-item {
+        height: 200px;
+        width: 400px;
+        box-shadow: 2px 2px 8px #3a3a3a;
+        /* box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.47); */
+        border-radius: 8px;
+        background-color: #000;
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        /* justify-content: center; */
+        align-items: center;
+        margin-top: 15px;
+      }
+      .salesBox button {
+        color: #ff8833;
+        border: 2px solid #ff8833;
+        border-radius: 5px;
+        width: 150px;
+        height: 30px;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .salesBox h6 {
+        font-size: 1rem;
+      }
+
+      .team {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .video {
+        width: 50%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+      }
+      .contentSection {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        /* padding-right: 20px; */
+      }
+      .contentSection h1 {
+        font-size: 3rem;
+        text-align: right;
+      }
+      .contentSection h5 {
+        font-size: 1.8rem;
+        text-align: right;
+        margin-top: 5px;
+      }
+      .contentSection .content-text {
+        font-size: 1.4rem;
+        text-align: right;
+        margin-top: 10px;
+        /* width: 450px; */
+      }
+      .contentSection p {
+        font-size: 1.1rem;
+        text-align: right;
+        margin-top: 10px;
+      }
+      video {
+        width: 90%;
+        height: 90%;
+      }
+
+      .contact {
+        width: 100%;
+        height: 70vh;
+      }
+
+      .contact .contactContent {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-between;
+      }
+
+      .contact_left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        padding-left: 50px;
+        gap: 15px;
+      }
+
+      .contact_left p {
+        font-size: 1.3rem;
+        /* margin-top: 10px; */
+      }
+      .contact_right {
+        width: 45%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: #000;
+        color: white;
+      }
+
+      .contactBox {
+        width: 80%;
+      }
+
+      .contact_right h2 {
+        font-size: 2.8rem;
+        background: #000;
+      }
+
+      .contact_right h1 {
+        font-size: 3.2rem;
+        color: #ff8833;
+        background: #000;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: none;
+        outline: none;
+        width: 80%;
+        height: 50%;
+        background: #000;
+        align-items: center;
+      }
+
+      form input {
+        padding: 15px;
+        background-color: black;
+        border: none;
+        outline: none;
+        box-shadow: 0px 0px 6px inset;
+        color: grey;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      form input[type="submit"] {
+        color: #ff8833;
+        border: 2px solid #ff8833;
+        border-radius: 5px;
+        width: 250px;
+        height: 50px;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .none {
+        display: none;
+      }
+      .swiper {
+        display: none;
+      }
+
+      @media (max-width: 1130px) {
+        .salesBox .col1 img {
+          width: 40%;
+          height: 70%;
+          border-radius: 50%;
+          margin-bottom: 10px;
+        }
+
+        .salesBox {
+          display: flex;
+          flex-direction: row;
+          padding: 10px;
+          /* height: 60%; */
+          gap: 15px;
+          width: 95%;
+          justify-content: center;
+        }
+
+        .salesBox .grid-item {
+          height: 300px;
+          width: 250px;
+          box-shadow: 2px 2px 8px #3a3a3a;
+
+          /* box-shadow: 0px 0px 7px rgb(255 255 255 / 47%); */
+          border-radius: 8px;
+          background-color: #000;
+          display: flex;
+          gap: 10px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 15px;
+        }
+        .col1 {
+          width: 90%;
+        }
+        .col2 {
+          width: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          /* padding-left: 10px; */
+          background-color: #000;
+        }
+        .col2 p {
+          font-size: 0.9rem;
+          background-color: #000;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .saleMobile {
+          display: flex;
+          flex-direction: column;
+        }
+        .salesBox {
+          display: none;
+        }
+        .mySlides {
+          height: 300px;
+          box-shadow: 2px 2px 8px #3a3a3a;
+          width: 200px;
+          /* box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.47); */
+          border-radius: 8px;
+          background-color: #000;
+          display: none;
+          gap: 10px;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          align-items: center;
+          margin-top: 15px;
+          padding: 15px;
+        }
+
+        .mySlides .col1 {
+          width: 100%;
+          height: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-left: 10px;
+          background-color: #000;
+        }
+
+        .mySlides .col2 {
+          width: 100%;
+          height: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #000;
+        }
+
+        .dot-container {
+          text-align: center;
+          padding: 20px;
+          /* background: #ddd; */
+        }
+
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: 0.8s ease;
+        }
+
+        .active,
+        .dot:hover {
+          background-color: #ff8833;
+          width: 30px;
+          border-radius: 5px;
+        }
+
+        .saleMobile button {
+          color: #ff8833;
+          border: 2px solid #ff8833;
+          border-radius: 5px;
+          width: 90px;
+          height: 30px;
+          background: transparent;
+          cursor: pointer;
+        }
+
+        .mySlides .col1 img {
+          width: 80px;
+          height: 80px;
+        }
+
+        .mySlides .col2 p {
+          text-align: center;
+        }
+        .contact {
+          width: 100%;
+          height: 70vh;
+          display: flex;
+          justify-content: center;
+          /* flex-direction: column; */
+        }
+        .contact .contactContent {
+          width: 95%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .contact_left {
+          width: 90%;
+          height: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          /* padding-left: 50px; */
+          /* gap: 15px; */
+        }
+
+        .contact_right {
+          width: 90%;
+          height: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          background-color: #000;
+          color: white;
+        }
+        .contactBox {
+          width: 80%;
+          display: flex;
+          background: transparent;
+          justify-content: center;
+        }
+        .coloredHeading {
+          font-size: 1.6rem;
+          text-align: center;
+        }
+        .none {
+          display: inline;
+          background: transparent;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          border: none;
+          outline: none;
+          width: 80%;
+          height: 70%;
+          background: #000;
+          align-items: center;
+        }
+        form input {
+          padding: 15px;
+          background-color: black;
+          border: none;
+          outline: none;
+          box-shadow: 0px 0px 6px inset;
+          color: grey;
+          border-radius: 5px;
+          width: 60%;
+        }
+      }
+
+      @media (max-width: 850px) {
+        .team {
+          width: 100%;
+          height: 80vh;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .video {
+          width: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 2%;
+        }
+
+        .contentSection {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          /* padding-right: 20px; */
+        }
+        .contentSection h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+        .contentSection h5 {
+          font-size: 1.4rem;
+          text-align: center;
+          margin-top: 5px;
+        }
+
+        .contentSection .content-text {
+          font-size: 1.3rem;
+          text-align: center;
+          margin-top: 10px;
+          width: 90%;
+        }
+
+        .contentSection p {
+          font-size: 1.2rem;
+          text-align: center;
+          margin-top: 10px;
+          width: 98%;
+        }
+
+        form input[type="submit"] {
+          width: 200px;
+        }
+      }
+
+      @media (max-width: 950px) {
+        .swiper {
+          display: flex;
+        }
+        .coloredHeading {
+          font-size: 2rem;
+        }
+
+        .contact_right h1 {
+          font-size: 2rem;
+        }
+
+        .contact_right h2 {
+          font-size: 2rem;
+        }
+
+        .success {
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          /* justify-content: center; */
+          align-items: center;
+          /* margin-top: 20px; */
+          padding: 0 20px;
+        }
+        .leftSide {
+          padding-top: 0;
+          width: 100%;
+          height: 50%;
+          display: flex;
+          flex-direction: column;
+          /* padding-top: 5%; */
+          align-items: center;
+        }
+        .rightSide {
+          width: 90%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+        }
+        /* .sectionOne .grid-item {
+          height: 100%;
+          padding: 10px;
+          width: 70%;
+        } */
+        /* .sectionTwo .grid-item {
+          height: 100%;
+          padding: 10px;
+          width: 70%;
+        } */
+        .sectionOne .grid-item {
+          height: 50%;
+          padding: 5px;
+          width: 90%;
+        }
+        .sectionTwo .grid-item {
+          height: 50%;
+          padding: 5px;
+          width: 90%;
+        }
+        .leftSide h1 {
+          font-size: 2.5rem;
+          text-align: center;
+        }
+        .leftSide h5 {
+          font-size: 1.5rem;
+          margin-top: 15px;
+          text-align: center;
+        }
+        .leftSide p {
+          font-size: 1.5rem;
+          margin-top: 15px;
+          text-align: center;
+        }
+        .sectionTwo {
+          display: flex;
+          flex-direction: column;
+          height: 90%;
+          width: 50%;
+          /* justify-content: flex-end; */
+          padding: 10px;
+          align-items: center;
+          /* gap: 20px; */
+        }
+        .sectionOne {
+          display: flex;
+          flex-direction: column;
+          height: 90%;
+          width: 50%;
+          /* justify-content: flex-end; */
+          padding: 10px;
+          align-items: center;
+          /* gap: 20px; */
+        }
+      }
+
+      @media (max-width: 550px) {
+        .contactBox {
+          width: 100%;
+        }
+        .contact .contactContent {
+          width: 95%;
+          display: flex;
+          flex-direction: column;
+          height: 90%;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+        .contact_left {
+          width: 90%;
+          height: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-left: 0;
+          /* gap: 15px; */
+        }
+        .coloredHeading {
+          font-size: 1.3rem;
+        }
+        .contact_left p {
+          font-size: 1.2rem;
+          /* margin-top: 10px; */
+          text-align: center;
+        }
+        .contact_right {
+          width: 90%;
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          background-color: #000;
+          color: white;
+        }
+        .contact_right h2 {
+          font-size: 1.5rem;
+        }
+        .contact_right h1 {
+          font-size: 1.5rem;
+        }
+        form input {
+          width: 90%;
+        }
+        form input[type="submit"] {
+          width: 60%;
+        }
+      }
+      @media (max-width: 340px) {
+        .video {
+          width: 100%;
+        }
+        .salesTeam .colored-heading {
+          font-size: 1.3rem;
+        }
+        .team {
+          width: 100%;
+          height: 60vh;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+        .contact_right h1 {
+          font-size: 1rem;
+        }
+        .contact_right h2 {
+          font-size: 1rem;
+        }
+        .contact {
+          width: 100%;
+          height: 70vh;
+          display: flex;
+          justify-content: center;
+          /* flex-direction: column; */
+          margin-top: 10px;
+        }
+        .contentSection {
+          padding-right: 0;
+        }
+        .contentSection h1 {
+          font-size: 1.3rem;
+        }
+        .contentSection h5 {
+          font-size: 1.2rem;
+        }
+        .contentSection .content-text {
+          font-size: 1.1rem;
+        }
+        .contentSection p {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 1250px) {
+        .sectionOne .grid-item {
+          height: 40%;
+          padding: 5px;
+          width: 100%;
+        }
+        .sectionTwo .grid-item {
+          height: 40%;
+          padding: 5px;
+          width: 100%;
+        }
+        .sectionOne .col1 {
+          padding-left: 0px;
+          width: 30%;
+          text-align: center;
+        }
+        .sectionTwo .col1 {
+          padding-left: 0px;
+          width: 30%;
+          text-align: center;
+        }
+        .sectionTwo .col2 p {
+          font-size: 0.8rem;
+        }
+        .sectionOne .col2 p {
+          font-size: 0.8rem;
+        }
+        .sectionOne .col1 img {
+          width: 100%;
+          height: 70px;
+          border-radius: 50%;
+        }
+        .sectionTwo .col1 img {
+          width: 100%;
+          height: 70px;
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="solution">
+      <h1 class="colored-heading">⎯⎯⎯⎯ A One Stop Solution ⎯⎯⎯⎯</h1>
+      <p>
+        An Idea is the first step towards the success and we provide an all in
+        one support to grow your Idea at its maximal height.
+      </p>
+      <div class="solutionBox">
+        <div class="grid-item">
+          <div id="lottie1"></div>
+          Development
+        </div>
+        <div class="grid-item">
+          <div id="lottie2"></div>
+          Creation
+        </div>
+        <div class="grid-item">
+          <div id="lottie3"></div>
+          Marketing
+        </div>
+        <div class="grid-item">
+          <div id="lottie4"></div>
+          Management
+        </div>
+        <div class="grid-item">
+          <div id="lottie5"></div>
+          Optimization
+        </div>
+      </div>
+    </section>
+    <!-- <section></section> -->
+    <section class="success">
+      <div class="leftSide">
+        <h1 class="colored-heading">OUR WORK NARRATES THEIR SUCCESS STORIES</h1>
+        <h5>A place where your growth matters.</h5>
+        <p>
+          With many satisfied clients and successful projects. We upgraded
+          ourself many times.
+        </p>
+      </div>
+
+      <div class="rightSide">
+        <div class="sectionOne">
+          <div class="grid-item">
+            <div class="col1">
+              <img src="imgs/work1.jpg" alt="" />
+              <h6>Abhinav Garg</h6>
+            </div>
+            <div class="col2">
+              <p>
+                Working with Webreate on our social media needs, including
+                content and digital marketing, has allowed us to build a loyal
+                following across all social media platforms.
+              </p>
+              <br />
+              <p>Best Wishes- <br />Easy CamScan</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="col1">
+              <img src="imgs/work2.jpg" alt="" />
+              <h6>Kashak Aggarwal</h6>
+            </div>
+            <div class="col2">
+              <p>
+                The young team of Webreate has always been spot-on with great
+                ideas that have helped our brand establish our social media
+                presence and increase website traffic..
+              </p>
+              <br />
+              <p>
+                Best Wishes- <br />
+                Mehandihub
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sectionTwo">
+          <div class="grid-item">
+            <div class="col1">
+              <img src="imgs/work3.jpg" alt="" />
+              <h6>Samira Hadid</h6>
+            </div>
+            <div class="col2">
+              <p>
+                Webreate's customer support and attentiveness helped us double
+                our revenue. We actually felt like we had someone on our team.
+              </p>
+              <br />
+              <p>Best Wishes- <br />Celereate</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="col1">
+              <img src="imgs/work4.jpg" alt="" />
+              <h6>Adhiraj Mishra</h6>
+            </div>
+            <div class="col2">
+              <p>
+                Webreate created our websites and applications. Webreate's crew
+                is highly professional, and they completely understand your
+                business before developing content for it.
+              </p>
+              <br />
+              <p>Best Wishes- <br />Riyo Rent It Over</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper mySwiper swiper2">
+          <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide slide">
+              <div class="section_boxs">
+                <div class="details_box_left">
+                  <div class="photo_circle">
+                    <img src="imgs/work2.jpg" alt="" />
+                  </div>
+                  <h6>Kashak Aggarwal</h6>
+                </div>
+                <div class="details_box_right">
+                  <p>
+                    The young team of Webreate has always been spot-on with
+                    great ideas that have helped our brand establish our social
+                    media presence and increase website traffic. The Webreate
+                    design team has assisted us in creating our online presence
+                    from scratch.
+                  </p>
+                  <p>
+                    Best Wishes- <br />
+                    <cite>Mehandihub</cite>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="section_boxs">
+                <div class="details_box_left">
+                  <div class="photo_circle">
+                    <img src="imgs/work4.jpg" alt="" />
+                  </div>
+                  <h6>Adhiraj Mishra</h6>
+                </div>
+                <div class="details_box_right">
+                  <p>
+                    Webreate created our websites and applications. Webreate's
+                    crew is highly professional, and they completely understand
+                    your business before developing content for it.
+                  </p>
+                  <p>
+                    Best Wishes- <br />
+                    <cite>Riyo Rent It Over</cite>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="section_boxs">
+                <div class="details_box_left">
+                  <div class="photo_circle">
+                    <img src="imgs/work1.jpg" alt="" />
+                  </div>
+                  <h6>Abhinav Garg</h6>
+                </div>
+                <div class="details_box_right">
+                  <p>
+                    Working with Webreate on our social media needs, including
+                    content and digital marketing, has allowed us to build a
+                    loyal following across all social media platforms.
+                  </p>
+                  <p>
+                    Best Wishes- <br />
+                    <cite>Easy CamScan</cite>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="section_boxs">
+                <div class="details_box_left">
+                  <div class="photo_circle">
+                    <img src="imgs/work3.jpg" alt="" />
+                  </div>
+                  <h6>Samira Hadid</h6>
+                </div>
+                <div class="details_box_right">
+                  <p>
+                    Webreate's customer support and attentiveness helped us
+                    double our revenue. We actually felt like we had someone on
+                    our team.
+                  </p>
+                  <p>
+                    Best Wishes- <br />
+                    <cite>Celereate</cite>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <section class="salesTeam">
+      <h1 class="colored-heading">⎯⎯⎯⎯ OUR SALES TEAM ⎯⎯⎯⎯</h1>
+      <p>We Are Available For You Every Time</p>
+      <div class="saleMobile">
+        <div class="mySlides">
+          <div class="col1">
+            <img src="imgs/avatar3.webp" alt="" />
+            <h6>Larry</h6>
+          </div>
+          <div class="col2">
+            <p>
+              Thank you for the best advice and developing the best website for
+              this community.
+            </p>
+            <br />
+            <button>Call Now</button>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="col1">
+            <img src="imgs/avatar2.png" alt="" />
+            <h6>Larry</h6>
+          </div>
+          <div class="col2">
+            <p>
+              Thank you for the best advice and developing the best website for
+              this community.
+            </p>
+            <br />
+            <button>Call Now</button>
+          </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="col1">
+            <img src="imgs/avatar1.png" alt="" />
+            <h6>Larry</h6>
+          </div>
+          <div class="col2">
+            <p>
+              Thank you for the best advice and developing the best website for
+              this community.
+            </p>
+            <br />
+            <button>Call Now</button>
+          </div>
+        </div>
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <div class="salesBox">
+        <div class="grid-item">
+          <div class="col1">
+            <img src="imgs/avatar1.png" alt="" />
+            <h6>Henry</h6>
+          </div>
+          <div class="col2">
+            <p>
+              Thank you for the best advice and developing the best website for
+              this community.
+            </p>
+            <br />
+            <button>Call Now</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="col1">
+            <img src="imgs/avatar2.png" alt="" />
+            <h6>Lisa</h6>
+          </div>
+          <div class="col2">
+            <p>
+              Thank you for the best advice and developing the best website for
+              this community.
+            </p>
+            <br />
+            <button>Call Now</button>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="col1">
+            <img src="imgs/avatar3.webp" alt="" />
+            <h6>Larry</h6>
+          </div>
+          <div class="col2">
+            <p>
+              Thank you for the best advice and developing the best website for
+              this community.
+            </p>
+            <br />
+            <button>Call Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="video">
+        <video autoplay playsinline muted loop>
+          <source src="introteamnew.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="contentSection">
+        <h1 class="colored-heading">OUR TEAM, OUR STRENGTH.</h1>
+        <h5>Young minds and their passionate soul.</h5>
+        <p class="content-text">
+          With every Opinion on table, we always ensure the best for you.
+        </p>
+        <p>
+          Great work requires great people, and our team is among the finest. We
+          are a creative, sociable, and varied group that genuinely loves our
+          job and co-workers. Our teamwork, skill, and perspective enable us to
+          develop solutions that go much beyond mere excellent ideas.
+        </p>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contactContent">
+        <div class="contact_left">
+          <h1 class="coloredHeading">
+            FOR LATEST TIPS <br />
+            AND TRICKS <br />
+            JOINS US.
+          </h1>
+          <p>
+            Get the best updates, tricks and tips to enhance the way you design,
+            think and write. We are here to help you out through every hurdle.
+          </p>
+        </div>
+        <div class="contact_right">
+          <div class="contactBox">
+            <h2>Subscribe Our</h2>
+            <span class="none">&nbsp</span>
+            <h1>Newsletter</h1>
+          </div>
+          <form action="">
+            <input type="text" name="" id="" placeholder="Name" />
+            <input
+              type="tel"
+              name=""
+              id=""
+              placeholder="Mobile Number"
+              maxlength="10"
+            />
+            <input type="email" name="" id="" placeholder="Email ID" />
+            <input type="submit" value="SUBSCRIBE" id="form_btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+  <!-- Js link for scrolling effect -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Main js Link -->
+  <script src="js/script.js"></script>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    // Slider
+    var carousel = $(".carousel"),
+      currdeg = 0;
+
+    $(".next").on("click", { d: "n" }, rotate);
+    $(".prev").on("click", { d: "p" }, rotate);
+
+    function rotate(e) {
+      if (e.data.d == "n") {
+        currdeg = currdeg - 60;
+      }
+      if (e.data.d == "p") {
+        currdeg = currdeg + 60;
+      }
+      carousel.css({
+        "-webkit-transform": "rotateY(" + currdeg + "deg)",
+        "-moz-transform": "rotateY(" + currdeg + "deg)",
+        "-o-transform": "rotateY(" + currdeg + "deg)",
+        transform: "rotateY(" + currdeg + "deg)",
+      });
+    }
+  </script>
+</html>
