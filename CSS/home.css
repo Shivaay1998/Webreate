@@ -1596,8 +1596,7 @@ b {
 /* *****************Solution********************* */
 .solution {
     width: 100%;
-    padding: 
-    10px;
+    padding: 25px 0;
     /* height: 80vh; */
     display: flex;
     flex-direction: column;
@@ -1842,6 +1841,7 @@ b {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
+    background-color: wheat;
     color: var(--text2-color);
   }
   .video {
@@ -3726,8 +3726,6 @@ b {
 .sale h2 {
     font-size: 1.3vw;
     color: var(--text2-color);
-    margin-bottom: 20px;
-
 }
 
 .sale h1 {
@@ -4312,7 +4310,8 @@ option {
 }
 @media (max-width:521px) {
     .contact_left{
-        padding: 0;
+        padding-top: 10px;
+        justify-content: flex-start;
     }
     .contact_left h1 {
         padding: 0 !important;
