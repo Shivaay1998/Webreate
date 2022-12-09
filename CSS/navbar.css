@@ -51,25 +51,11 @@ body {
 }
 
 /* home page start */
-/* .container {
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-} */
 
 .fixed_line {
     text-align: center;
     background-color: #ff8833;
     padding: 10px 30px;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; */
     z-index: 99999;
     display: flex;
     justify-content: space-between;

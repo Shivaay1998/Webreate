@@ -57,64 +57,62 @@ body {
 
 /* home page start */
 
-.container {
-  width: 100%;
-  min-height: 100vh;
-  background-color: var(--primary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
 .fixed_line {
   text-align: center;
   background-color: #ff8833;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  padding: 10px 30px;
   z-index: 99999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 .fixed_line.scroll {
   top: -50px;
-  transition: 0.4s ease-in-out linear;
+  transition: .4s ease-in-out linear;
 }
+
 #phn-tag,
 #mail-tag {
   color: #000;
   display: flex;
   align-items: flex-end;
 }
+
 .fixed_line h1 .bx {
   color: #000;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-decoration: none;
 }
+
 .mail-icon {
   display: none !important;
 }
+
 #phn-tag:hover,
 #mail-tag:hover {
   color: red;
 }
+
 .contact-box {
   display: flex;
   gap: 5px;
 }
 
+
 .navbar.scroll {
   top: 0;
-  transition: 0.4s ease-in-out linear;
+  transition: .4s ease-in-out linear;
 }
 
 .fixed_line h1 {
-  font-size: 1.28rem;
+  font-size: 1.3rem;
   color: #000;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  align-items: end;
+  gap: 2px;
 }
 
 .navbar {
@@ -131,10 +129,18 @@ body {
 }
 
 .navbar.sticky {
+  top: 0;
   box-shadow: 0px 0px 5px #606060;
   background-color: #000;
-  padding: 10px 40px;
-  transition: 0.2s all linear;
+  /* padding: 10px 40px; */
+  transition: .1s all ease-in-out;
+}
+
+.left-bar.sticky {
+  z-index: 4;
+  height: 100.5vh;
+  opacity: 1;
+  bottom: 0px;
 }
 
 .navbar .logo a,
@@ -152,15 +158,16 @@ body {
 
 .navbar svg {
   width: 22% !important;
+
 }
 
 .btn_box {
-  height: 4rem;
+  height: 2.5rem;
   width: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.2s all linear;
+  transition: .2s all linear;
   /* position: absolute; */
   z-index: 999999;
   right: 10px;
@@ -169,14 +176,14 @@ body {
 .menu,
 .close {
   background-color: transparent;
-  font-size: 3.58rem;
+  font-size: 3.5rem;
   font-weight: 600;
   color: #fff;
   border: none;
   outline: none;
   cursor: pointer;
   opacity: 1;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .menu:active {
@@ -193,18 +200,17 @@ body {
 }
 
 /* .menu:hover::after .close:hover::after {
-    width: 8%;
+  width: 8%;
 } */
 
 .full_screen_bar {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-color: transparent;
   position: fixed;
-  left: 0;
   top: -1000px;
   z-index: 3;
-  transition: 0.6s all linear;
+  transition: .6s all linear;
   z-index: 9999;
 }
 
@@ -223,11 +229,11 @@ body {
 }
 
 .left-bar {
-  height: 92vh;
-  width: 60%;
+  height: 100vh;
+  width: 66%;
   background-color: #000;
   z-index: 4;
-  transition: 0.7s all linear;
+  transition: .7s all linear;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -239,7 +245,8 @@ body {
 
 .detailBox h3 {
   color: #ff8833;
-  padding: 5px;
+  padding: 5px 0;
+  font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -254,12 +261,17 @@ body {
 }
 
 .details_inside {
-  margin: 50px 0 0 20px;
+  margin: 83px 0 0 20px;
 }
 
 .logo3 .logo1 svg {
   width: 56% !important;
   padding-top: 10px;
+}
+
+.logo3 {
+  position: absolute;
+  width: 53%;
 }
 
 .detailBox ul {
@@ -269,7 +281,7 @@ body {
 }
 
 .detailBox ul li a {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
 }
@@ -287,6 +299,7 @@ body {
   padding: 40px;
   width: 62%;
   text-align: left;
+
 }
 
 .detailBox_left ul {
@@ -296,7 +309,7 @@ body {
 }
 
 .detailBox_left ul li a {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
 }
@@ -309,9 +322,10 @@ body {
   position: absolute;
   right: 0;
   text-align: end;
-  transition: 0.8s all linear;
+  transition: .8s all linear;
   position: absolute;
   top: -200vh;
+
 }
 
 .btn_box1 {
@@ -320,316 +334,352 @@ body {
 }
 
 .right-bar.active_bar {
-  height: 96vh;
+  height: 100vh;
   z-index: 6;
   display: block;
-  top: -26px;
+  top: -62px;
 }
+
 
 .left-bar.active_bar {
   z-index: 4;
-  height: 96.5vh;
+  height: 100vh;
   opacity: 1;
-  bottom: -15px;
+  bottom: 62px;
 }
 
 .full_screen_bar.active_bar {
-  top: 59px;
+  top: 61px;
 }
 
-iframe {
-  width: 100%;
-  border-radius: 25px;
-}
+@media (max-width:1100px) {
 
-@media (max-width: 1100px) {
   .menu,
   .close {
-    font-size: 3.68rem;
+      font-size: 3.3rem;
   }
 
   .navbar svg {
-    width: 33% !important;
+      width: 33% !important;
   }
 
-  .left-bar.active_bar {
-    height: 96.5vh;
-  }
+  /* .left-bar.active_bar {
+      height: 96.5vh;
+  } */
+
 }
 
-@media (max-width: 1011px) {
+@media (max-width:1011px) {
   .left-bar {
-    padding-left: 0px;
+      padding-left: 0px;
   }
 
   .logo3 {
-    padding-left: 41px;
+      padding-left: 41px;
   }
 
   .navbar svg {
-    width: 30% !important;
+      width: 30% !important;
   }
 
   .detailBox {
-    gap: 127px;
+      gap: 127px;
   }
 
   .detailBox ul li a {
-    font-size: 2.8rem;
-  }
+    font-size: 2rem;
+}
 
   .detailBox_left ul li a {
-    font-size: 2.8rem;
+      font-size: 2.3rem;
   }
 
   .logo3 .logo1 svg {
-    width: 60% !important;
-    padding-top: 10px;
+      width: 60% !important;
+      padding-top: 10px;
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width:940px) {
+
   .menu,
   .close {
-    font-size: 3.5rem;
+      font-size: 3.2rem;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width:880px) {
+  .logo3 {
+      width: 75%;
+  }
+}
+
+@media (max-width:780px) {
   .navbar svg {
-    width: 36% !important;
+      width: 36% !important;
   }
 
   .navbar {
-    padding: 10px 30px;
-    top: 31px;
+      padding: 10px 30px;
+      top: 31px;
   }
 
   .menu,
   .close {
-    font-size: 3.2rem;
+      font-size: 3rem;
   }
 
   .fixed_line {
-    padding: 9px;
+      padding: 9px;
   }
 
   .details_inside {
-    margin: 69px 0 0 20px;
+      margin: 69px 0 0 20px;
   }
 
   .detailBox {
-    gap: 83px;
+      gap: 83px;
+  }
+}
+
+@media (max-width:686px) {
+  .logo3 .logo1 svg {
+      width: 73% !important;
   }
 
+  .details_inside {
+      margin: 69px 0 0 1px;
+  }
+
+  .detailBox ul li a {
+      font-size: 1.7rem;
+  }
+
+  .menu,
+  .close {
+      font-size: 2.8rem;
+  }
   .right-bar.active_bar {
-    top: -31px;
-  }
+    height: 101vh;
 }
-
-@media (max-width: 686px) {
-  .logo3 .logo1 svg {
-    width: 73% !important;
-  }
-
-  .details_inside {
-    margin: 69px 0 0 1px;
-  }
-
-  .detailBox ul li a {
-    font-size: 1.7rem;
-  }
-
-  .menu,
-  .close {
-    font-size: 2.8rem;
-  }
 
   .detailBox_left ul li a {
-    font-size: 1.9rem;
+      font-size: 2.2rem;
   }
 
   .navbar {
-    padding: 3px 30px;
-    top: 30px;
+      padding: 3px 30px;
+      top: 30px;
   }
 }
-@media (max-width: 600px) {
+
+@media (max-width:600px) {
   .mail-icon {
-    display: block !important;
+      display: block !important;
   }
+
   .mail-icon1 {
-    display: none !important;
+      display: none !important;
   }
+
   #phn-tag span {
-    display: none;
+      display: none;
   }
+
   .fixed_line {
-    flex-direction: row-reverse;
+      flex-direction: row-reverse;
   }
 }
-@media (max-width: 566px) {
+
+@media (max-width:566px) {
   .navbar svg {
-    width: 49% !important;
+      width: 49% !important;
   }
 
   .navbar {
-    padding: 4px 16px;
-    top: 25px;
+      padding: 4px 16px;
+      top: 25px;
   }
 
   .btn_box {
-    height: 4rem;
-    width: 8rem;
-    display: flex;
-    justify-content: center;
-    margin-top: 4px;
-    align-items: center;
-    transition: 0.2s all linear;
+      height: 2.5rem;
+      width: 8rem;
+      display: flex;
+      justify-content: center;
+      margin-top: 4px;
+      align-items: center;
+      transition: .2s all linear;
   }
 
   .btn_box1 {
-    padding-top: 21px;
-    width: 90%;
+      padding-top: 21px;
+      width: 90%;
   }
 
   .logo3 {
-    padding-left: 17px;
+      padding-left: 17px;
   }
 
   .logo3 .logo1 svg {
-    width: 70% !important;
+      width: 70% !important;
   }
 
   .fixed_line h1 {
-    font-size: 0.9rem;
-    color: #000;
-    font-family: "Josefin Sans", sans-serif;
+      font-size: 1.1rem;
+      color: #000;
+      font-family: 'Josefin Sans', sans-serif;
   }
 }
 
 @media (max-width: 490px) {
   .detailBox {
-    gap: 62px;
+      gap: 14px;
   }
 
   .navbar {
-    padding: 3px 30px;
-    top: 26px;
+      padding: 3px 30px;
+      top: 26px;
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width:470px) {
   .detailBox {
-    flex-direction: column;
+      flex-direction: column;
+      padding: 13px 20px;
+  }
+  .detailBox ul {
+      gap: 12px;
   }
 
   .details_inside {
-    margin: 18px 0 0 1px;
+      margin: 36px 0 0 1px;
   }
 }
 
 @media (max-width: 415px) {
+
   .navbar svg {
-    width: 64% !important;
+      width: 64% !important;
   }
 
   .navbar {
-    padding: 3px 17px;
+      padding: 3px 17px;
   }
 
   .navbar.sticky {
-    padding: 10px 21px;
+      padding: 10px 21px;
   }
 }
 
-@media (max-width: 435px) {
+@media (max-width:435px) {
+  .detailBox_left {
+      height: 37%;
+      width: 100%;
+  }
   .close_hide {
-    display: block;
+      display: block;
   }
 
   .menu_hide_box {
-    display: block;
+      display: block;
   }
 
   .right-bar.active_bar {
-    display: none;
+      display: none;
   }
 
   .left-bar {
-    width: 100%;
+      width: 100%;
   }
 
   .details_inside {
-    margin: 0;
-    margin-top: 13px;
+      margin: 0;
+      margin-top: 70px;
   }
 
   .detailBox {
-    margin: 0 0 0 10px;
-    padding: 5px 17px;
-    gap: 10px;
+      margin: 0 0 0 10px;
+      padding: 5px 17px;
+      gap: 10px;
   }
 
   .detailBox ul {
-    gap: 9px;
+      gap: 9px;
   }
 
   .detailBox_left ul {
-    gap: 10px;
+      gap: 16px;
+      flex-direction: row;
   }
-
-  .detailBox_left {
-    margin: 14px 0 0 10px;
-    padding: 17px;
+  .detailBox_left ul li a {
+      font-size: 2.2rem;
   }
 
   .menu_hide_box {
-    background: #ff8833;
-    width: 254%;
-    height: 32vh;
+      background: #ff8833;
+      width: 262%;
+      height: 32vh;
   }
 
   .logo3 .logo1 svg {
-    width: 62% !important;
+      width: 62% !important;
   }
 
   .btn_box1 {
-    width: 90%;
-    padding-top: 16px;
-    position: absolute;
-    right: -272px;
+      width: 90%;
+      padding-top: 16px;
+      position: absolute;
+      right: -272px;
   }
 
   .full_screen_bar.active_bar {
-    /* left: -411px; */
-    top: -27px;
-    /* bottom: 0; */
+      /* left: -411px; */
+      top: -25px;
+      /* bottom: 0; */
   }
 
   .left-bar {
-    top: -444px;
+      top: -444px;
   }
 
   .left-bar.active_bar {
-    left: 0;
-    top: 51px;
+      left: 0;
+      top: 22px;
+  }
+  .detailBox_left {
+      height: 40%;
+      width: 58%;
+      padding: 20px;
+      justify-content: start;
+      align-items: flex-end;
   }
 }
 
 @media (max-width: 369px) {
+
   .btn_box1 {
-    position: absolute;
-    right: -233px;
+      position: absolute;
+      right: -233px;
+  }
+
+  .fixed_line h1 {
+      font-size: 1rem;
+  }
+
+  .fixed_line h1 .bx {
+      font-size: .8rem;
   }
 }
 
 @media (max-width: 337px) {
+
   .btn_box1 {
-    position: absolute;
-    right: -213px;
+      position: absolute;
+      right: -213px;
   }
 }
+
+
 
 /* header end */
 
@@ -690,11 +740,13 @@ html {
   border-radius: 15px;
   color: #fff;
   cursor: pointer;
+  transition: .2s all ease-in-out;
 }
 
-/* .container .contactInfo .box:hover {
-  border: 1px solid #ff8833;
-} */
+.container .contactInfo .box:hover {
+  background: var(--main);
+  color: #fff;
+}
 
 .active {
   background: var(--main);
@@ -902,6 +954,7 @@ a:hover i {
     padding: 25px 50px;
     background-size: contain;
     height: 100vh;
+    margin-top: 0px;
   }
 
   .contact-container {
@@ -1145,7 +1198,7 @@ a:hover i {
   }
 
   .contact-container .contact-box {
-    width: 100%;
+    width: 58%;
     height: 70%;
     display: flex;
     flex-direction: column;
@@ -1157,8 +1210,8 @@ a:hover i {
   }
 
   .contact-container .contactInfo .box {
-    width: 85%;
-    height: 30%;
+    width: 54%;
+    height: 33%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
