@@ -1395,6 +1395,9 @@ b {
     height: 113px;
     width: 120px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .accordion .circles h4 {
@@ -1404,10 +1407,17 @@ b {
     font-size: .9rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+.imgs {
+    width: 88px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .accordion .circles img {
-    height: 64px;
-    width: 93px;
+    height: inherit;
+    width: fit-content;
 }
 
 .achievement {
@@ -1466,10 +1476,6 @@ b {
     .accordion .box h2 {
         font-size: 1.3rem;
     }
-    .accordion .circles img {
-        height: 54px;
-        width: 76px;
-    }
     .accordion .circles {
         height: 106px;
         width: 108px;
@@ -1491,13 +1497,11 @@ b {
     .accordion .circles {
         height: 85px;
         width: 108px;
-    }
-    .accordion .circles img {
-        height: 39px;
-        width: 54px;
+        text-align: center;
     }
     .accordion .circles h4 {
         font-size: .65rem;
+        text-align: center;
     }
     .accordians h2 {
         font-size: 1.1rem;
@@ -1576,8 +1580,9 @@ b {
     .bxl-gmail{
         transform: rotate(0deg);
     }
-}
-@media (max-width:600px) {
+    .imgs {
+        height: 49px;
+    }
 }
 @media (max-width:460px) {
     .accordion .box .text h1 {
@@ -1591,6 +1596,11 @@ b {
     }
     .accordion button {
         padding: 7px 14px;
+    }
+}
+@media (max-width:400px) {
+    .accordion .circles {
+        height: 79px;
     }
 }
 /* *****************Solution********************* */
@@ -3375,6 +3385,7 @@ b {
     .section_box {
         flex-direction: column;
         width: 95%;
+        gap: 10px;
     }
 
     .section_left {
@@ -3396,7 +3407,7 @@ b {
     }
 
     .section_boxs {
-        height: 50vh;
+        height: 45vh;
         width: 38vw;
         margin: 16px 0;
         display: flex;
@@ -3481,7 +3492,7 @@ b {
     }
 
     .section_boxs {
-        height: 53vh;
+        height: 47vh;
         width: 47vw;
         margin: 16px 0;
         display: flex;
@@ -3513,7 +3524,7 @@ b {
 @media (max-width:477px) {
 
     .section_boxs {
-        width: 52vw;
+        width: 46vw;
         height: 50vh;
     }
     .section_left {
@@ -3566,7 +3577,7 @@ b {
     }
 
     .section_boxs {
-        height: 50vh;
+        height: 45vh;
         width: 55vw;
         margin: 16px 0;
         display: flex;
@@ -3630,7 +3641,7 @@ b {
         margin-top: 7px;
     }
     .swiper2 {
-        height: 53vh;
+        height: 55vh;
     }
 } 
 
@@ -4366,7 +4377,7 @@ option {
         width: 100%;
     }
     .contact {
-        min-height: 94vh;
+        min-height: 89vh;
     }
 }
 
@@ -4386,6 +4397,7 @@ option {
     }
     .contact {
         margin: 0;
+        min-height: 87vh;
     }
 }
 
