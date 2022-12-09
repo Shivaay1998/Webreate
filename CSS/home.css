@@ -1841,7 +1841,6 @@ b {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
-    background-color: wheat;
     color: var(--text2-color);
   }
   .video {

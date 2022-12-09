@@ -599,7 +599,7 @@ body {
 
     .details_inside {
         margin: 0;
-        margin-top: 58px;
+        margin-top: 70px;
     }
 
     .detailBox {
@@ -639,7 +639,7 @@ body {
 
     .full_screen_bar.active_bar {
         /* left: -411px; */
-        top: -27px;
+        top: -25px;
         /* bottom: 0; */
     }
 
