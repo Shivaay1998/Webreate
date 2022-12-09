@@ -1081,7 +1081,7 @@ pre{
 }
 @media (max-width:890px) {
     .sec1-main-img {
-        width: 46%;
+        width: 57%;
     }
     .blog-sec1 h2 {
         right: -69px;
@@ -1316,6 +1316,9 @@ pre{
     .rightimg {
         width: 42%;
     }
+    .blog-sec1{
+        min-height: 84vh;
+    }
     
 }
 @media (max-width:650px) {
@@ -1540,6 +1543,10 @@ pre{
     .conclusion p {
         text-align: center;
     }
+    .sec1-main-img {
+        height: 44vh;
+        width: 47%;
+    }
 }
 @media (max-width:530px) {
     .blog3-section {
@@ -1579,7 +1586,11 @@ pre{
         width: 131px;
     }
     .blog-sec1 {
-        min-height: 85vh;
+        min-height: 70vh;
+    }
+    .sec1-main-img {
+        height: 35vh;
+        width: 53%;
     }
     .blog3-section {
         height: 152vh;

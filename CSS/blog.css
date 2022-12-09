@@ -419,7 +419,10 @@ body {
 
 @media (max-width:500px) {
     .right h1 {
-        font-size: 20vw;
+        font-size: 18vw;
+    }
+    .left {
+        padding-left: 34px;
     }
 
     .blog_div {
@@ -428,6 +431,7 @@ body {
 
     .main_content {
         overflow: hidden;
+        height: 66vh;
     }
 }
 
@@ -442,7 +446,7 @@ body {
     }
 
     .left {
-        padding-left: 111px;
+        padding-left: 76px;
         padding-top: 68px;
     }
     .section_two {

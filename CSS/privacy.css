@@ -4,6 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
+
 .preloader {
     width: 100%;
     height: 100%;
@@ -140,12 +141,25 @@
         height: 412px;
     }
 }
+
 @media (max-width:1295px) {
-    .topic_bar1, .topic_bar2, .topic_bar3, .topic_bar4, .topic_bar5, .topic_bar6, .topic_bar7, .topic_bar8, .topic_bar9, .topic_bar10, .topic_bar11 {
+
+    .topic_bar1,
+    .topic_bar2,
+    .topic_bar3,
+    .topic_bar4,
+    .topic_bar5,
+    .topic_bar6,
+    .topic_bar7,
+    .topic_bar8,
+    .topic_bar9,
+    .topic_bar10,
+    .topic_bar11 {
         background-color: #171717;
         top: 63px;
     }
 }
+
 @media (max-width: 1190px) {
     .about-left {
         margin-top: 301px;
@@ -858,7 +872,17 @@ option {
         padding: 22px 0;
     }
 
-    .topic_bar1, .topic_bar2, .topic_bar3, .topic_bar4, .topic_bar5, .topic_bar6, .topic_bar7, .topic_bar8, .topic_bar9, .topic_bar10, .topic_bar11 {
+    .topic_bar1,
+    .topic_bar2,
+    .topic_bar3,
+    .topic_bar4,
+    .topic_bar5,
+    .topic_bar6,
+    .topic_bar7,
+    .topic_bar8,
+    .topic_bar9,
+    .topic_bar10,
+    .topic_bar11 {
         top: 63px;
     }
 
@@ -893,7 +917,18 @@ option {
         width: 385px;
         height: 235px;
     }
-    .topic_bar1, .topic_bar2, .topic_bar3, .topic_bar4, .topic_bar5, .topic_bar6, .topic_bar7, .topic_bar8, .topic_bar9, .topic_bar10, .topic_bar11 {
+
+    .topic_bar1,
+    .topic_bar2,
+    .topic_bar3,
+    .topic_bar4,
+    .topic_bar5,
+    .topic_bar6,
+    .topic_bar7,
+    .topic_bar8,
+    .topic_bar9,
+    .topic_bar10,
+    .topic_bar11 {
         top: 58px;
     }
 }
@@ -1041,39 +1076,26 @@ option {
     .mainbtn {
         font-size: .9rem;
     }
-
-    .scroller>div:nth-child(1) {
-        transform: rotateX(360deg) translateZ(50px);
-        background-color: #171717;
-    }
-
-    .scroller>div:nth-child(2) {
-        transform: rotateX(288deg) translateZ(50px);
-        background-color: #171717;
-    }
-
-    .scroller>div:nth-child(3) {
-        transform: rotateX(216deg) translateZ(50px);
-        background-color: #171717;
-    }
-
-    .scroller>div:nth-child(4) {
-        transform: rotateX(144deg) translateZ(50px);
-        background-color: #171717;
-    }
-
-    .scroller>div:nth-child(5) {
-        transform: rotateX(72deg) translateZ(50px);
-        background-color: #171717;
-        padding-left: 0;
-        color: #ff8833;
-    }
 }
 
 @media (max-width:580px) {
     .scroller_box {
         width: 60%;
         height: 3.2rem;
+    }
+
+    .topic_bar1,
+    .topic_bar2,
+    .topic_bar3,
+    .topic_bar4,
+    .topic_bar5,
+    .topic_bar6,
+    .topic_bar7,
+    .topic_bar8,
+    .topic_bar9,
+    .topic_bar10,
+    .topic_bar11 {
+        top: 50px;
     }
 }
 
@@ -1144,18 +1166,44 @@ option {
     .para {
         padding: 0 38px;
     }
+
     .topic_bar {
         top: 49px;
     }
-    .topic_bar p, .topic_bar1 p, .topic_bar2 p, .topic_bar3 p, .topic_bar4 p, .topic_bar5 p, .topic_bar6 p, .topic_bar7 p, .topic_bar8 p, .topic_bar9 p, .topic_bar10 p, .topic_bar11 p, .topic_bar12 p {
+
+    .topic_bar p,
+    .topic_bar1 p,
+    .topic_bar2 p,
+    .topic_bar3 p,
+    .topic_bar4 p,
+    .topic_bar5 p,
+    .topic_bar6 p,
+    .topic_bar7 p,
+    .topic_bar8 p,
+    .topic_bar9 p,
+    .topic_bar10 p,
+    .topic_bar11 p,
+    .topic_bar12 p {
         font-size: 1.3rem;
     }
 }
+
 @media (max-width:411px) {
     .topic_bar {
         top: 57px;
     }
-    .topic_bar1, .topic_bar2, .topic_bar3, .topic_bar4, .topic_bar5, .topic_bar6, .topic_bar7, .topic_bar8, .topic_bar9, .topic_bar10, .topic_bar11 {
+
+    .topic_bar1,
+    .topic_bar2,
+    .topic_bar3,
+    .topic_bar4,
+    .topic_bar5,
+    .topic_bar6,
+    .topic_bar7,
+    .topic_bar8,
+    .topic_bar9,
+    .topic_bar10,
+    .topic_bar11 {
         top: 63px;
     }
 }
@@ -1185,10 +1233,22 @@ option {
         font-size: 2.3rem;
         padding: 25px 0;
     }
+
     .topic_bar {
         top: 63px;
     }
-    .topic_bar1, .topic_bar2, .topic_bar3, .topic_bar4, .topic_bar5, .topic_bar6, .topic_bar7, .topic_bar8, .topic_bar9, .topic_bar10, .topic_bar11 {
+
+    .topic_bar1,
+    .topic_bar2,
+    .topic_bar3,
+    .topic_bar4,
+    .topic_bar5,
+    .topic_bar6,
+    .topic_bar7,
+    .topic_bar8,
+    .topic_bar9,
+    .topic_bar10,
+    .topic_bar11 {
         top: 63px;
     }
 }
