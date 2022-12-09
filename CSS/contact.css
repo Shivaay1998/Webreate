@@ -701,6 +701,9 @@ html {
   margin-top: 50px;
   overflow: hidden;
 }
+section#home {
+  overflow: hidden;
+}
 
 .contact .heading {
   color: var(--main);
