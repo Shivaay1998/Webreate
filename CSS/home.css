@@ -447,12 +447,13 @@ textarea {
     .container {
         align-items: center;
         flex-direction: column;
+        padding-left: 0;
     }
     .main_right {
         padding: 10px;
     }
     .main_right {
-        width: calc(100vw - 2%);
+        width: calc(100vw - 8%);
         align-items: flex-start;
     }
     .main_right form {
@@ -460,6 +461,7 @@ textarea {
     }
     .main_left {
         width: 98%;
+        padding-left: 20px;
     }
     .container {
         padding-top: 9%;
@@ -484,6 +486,7 @@ textarea {
         font-size: .8rem;
         border: 1.5px solid var(--text-color);
     }
+    
 }
 @media (max-width:420px) {
     .mainleft-typing img {
@@ -1577,6 +1580,7 @@ b {
         height: 73px;
         width: 108px;
     }
+    
     .bxl-gmail{
         transform: rotate(0deg);
     }
@@ -1597,10 +1601,18 @@ b {
     .accordion button {
         padding: 7px 14px;
     }
+    .accordion .circles {
+        height: 73px;
+        width: 75px;
+    }
 }
 @media (max-width:400px) {
     .accordion .circles {
         height: 79px;
+        width: 67px;
+    }
+    .imgs {
+        height: 44px;
     }
 }
 /* *****************Solution********************* */
