@@ -40,14 +40,12 @@
     border-radius: 8px;
 }
 
+/* home page start */
+
 .fixed_line {
     text-align: center;
     background-color: #ff8833;
     padding: 10px 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 99999;
     display: flex;
     justify-content: space-between;
@@ -59,22 +57,29 @@
     top: -50px;
     transition: .4s ease-in-out linear;
 }
-#phn-tag, #mail-tag{
+
+#phn-tag,
+#mail-tag {
     color: #000;
     display: flex;
     align-items: flex-end;
 }
-.fixed_line h1 .bx{
+
+.fixed_line h1 .bx {
     color: #000;
     font-size: .9rem;
     text-decoration: none;
 }
-.mail-icon{
+
+.mail-icon {
     display: none !important;
 }
-#phn-tag:hover, #mail-tag:hover{
+
+#phn-tag:hover,
+#mail-tag:hover {
     color: red;
 }
+
 .contact-box {
     display: flex;
     gap: 5px;
@@ -109,10 +114,18 @@
 }
 
 .navbar.sticky {
+    top: 0;
     box-shadow: 0px 0px 5px #606060;
     background-color: #000;
-    padding: 10px 40px;
-    transition: .2s all linear;
+    /* padding: 10px 40px; */
+    transition: .1s all ease-in-out;
+}
+
+.left-bar.sticky {
+    z-index: 4;
+    height: 100.5vh;
+    opacity: 1;
+    bottom: 0px;
 }
 
 .navbar .logo a,
@@ -177,10 +190,9 @@
 
 .full_screen_bar {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-color: transparent;
     position: fixed;
-    left: 0;
     top: -1000px;
     z-index: 3;
     transition: .6s all linear;
@@ -202,8 +214,8 @@
 }
 
 .left-bar {
-    height: 92vh;
-    width: 60%;
+    height: 100vh;
+    width: 66%;
     background-color: #000;
     z-index: 4;
     transition: .7s all linear;
@@ -218,7 +230,7 @@
 
 .detailBox h3 {
     color: #ff8833;
-    padding: 5px;
+    padding: 5px 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -233,13 +245,17 @@
 }
 
 .details_inside {
-    margin: 50px 0 0 20px;
-
+    margin: 83px 0 0 20px;
 }
 
 .logo3 .logo1 svg {
     width: 56% !important;
     padding-top: 10px;
+}
+
+.logo3 {
+    position: absolute;
+    width: 53%;
 }
 
 .detailBox ul {
@@ -302,21 +318,22 @@
 }
 
 .right-bar.active_bar {
-    height: 96vh;
+    height: 100vh;
     z-index: 6;
     display: block;
-    top: -26px;
+    top: -62px;
 }
+
 
 .left-bar.active_bar {
     z-index: 4;
-    height: 96.5vh;
+    height: 100vh;
     opacity: 1;
-    bottom: -15px;
+    bottom: 62px;
 }
 
 .full_screen_bar.active_bar {
-    top: 59px;
+    top: 61px;
 }
 
 @media (max-width:1100px) {
@@ -330,9 +347,9 @@
         width: 33% !important;
     }
 
-    .left-bar.active_bar {
+    /* .left-bar.active_bar {
         height: 96.5vh;
-    }
+    } */
 
 }
 
@@ -375,6 +392,12 @@
     }
 }
 
+@media (max-width:880px) {
+    .logo3 {
+        width: 75%;
+    }
+}
+
 @media (max-width:780px) {
     .navbar svg {
         width: 36% !important;
@@ -400,10 +423,6 @@
 
     .detailBox {
         gap: 83px;
-    }
-
-    .right-bar.active_bar {
-        top: -31px;
     }
 }
 
@@ -434,16 +453,20 @@
         top: 33px;
     }
 }
+
 @media (max-width:600px) {
-    .mail-icon{
+    .mail-icon {
         display: block !important;
     }
-    .mail-icon1{
+
+    .mail-icon1 {
         display: none !important;
     }
-    #phn-tag span{
+
+    #phn-tag span {
         display: none;
     }
+
     .fixed_line {
         flex-direction: row-reverse;
     }
@@ -491,7 +514,7 @@
 
 @media (max-width: 490px) {
     .detailBox {
-        gap: 62px;
+        gap: 14px;
     }
 
     .navbar {
@@ -503,10 +526,14 @@
 @media (max-width:470px) {
     .detailBox {
         flex-direction: column;
+        padding: 13px 20px;
+    }
+    .detailBox ul {
+        gap: 12px;
     }
 
     .details_inside {
-        margin: 18px 0 0 1px;
+        margin: 36px 0 0 1px;
     }
 }
 
@@ -526,6 +553,10 @@
 }
 
 @media (max-width:435px) {
+    .detailBox_left {
+        height: 37%;
+        width: 100%;
+    }
     .close_hide {
         display: block;
     }
@@ -544,7 +575,7 @@
 
     .details_inside {
         margin: 0;
-        margin-top: 13px;
+        margin-top: 70px;
     }
 
     .detailBox {
@@ -558,12 +589,11 @@
     }
 
     .detailBox_left ul {
-        gap: 10px;
+        gap: 36px;
+        flex-direction: row;
     }
-
-    .detailBox_left {
-        margin: 14px 0 0 10px;
-        padding: 17px;
+    .detailBox_left ul li a {
+        font-size: 2.2rem;
     }
 
     .menu_hide_box {
@@ -575,7 +605,7 @@
     .logo3 .logo1 svg {
         width: 62% !important;
     }
-    
+
     .btn_box1 {
         width: 90%;
         padding-top: 16px;
@@ -585,7 +615,7 @@
 
     .full_screen_bar.active_bar {
         /* left: -411px; */
-        top: -27px;
+        top: -25px;
         /* bottom: 0; */
     }
 
@@ -595,9 +625,15 @@
 
     .left-bar.active_bar {
         left: 0;
-        top: 51px;
+        top: 22px;
     }
-
+    .detailBox_left {
+        height: 40%;
+        width: 58%;
+        padding: 20px;
+        justify-content: start;
+        align-items: flex-end;
+    }
 }
 
 @media (max-width: 369px) {
@@ -606,9 +642,11 @@
         position: absolute;
         right: -233px;
     }
+
     .fixed_line h1 {
         font-size: .6rem;
     }
+
     .fixed_line h1 .bx {
         font-size: .8rem;
     }
@@ -1039,7 +1077,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 86%;
+    width: 96%;
 }
 
 .bottom_right button {
@@ -1172,11 +1210,12 @@ img {
     }
 
     .bottom_left h5 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .bottom_right button {
-        padding: 7px 23px;
+        padding: 7px 15px;
+        font-size: .8rem;
     }
 
     .section5-right {
@@ -1543,6 +1582,16 @@ img {
 
     .section7-midright img {
         max-width: 139% !important;
+    }
+    .bottom_left h5 {
+        font-size: 1rem;
+    }
+    .bottom_right button {
+        padding: 5px 10px;
+        font-size: .8rem;
+    }
+    .section8-imgback1 {
+        height: 186px;
     }
 }
 
@@ -2043,8 +2092,8 @@ img {
     }
 
     .bottom_right button {
-        font-size: .8rem;
-        padding: 6px 10px;
+        font-size: .7rem;
+        padding: 5px 9px;
     }
 
     .section-left img {
@@ -2057,6 +2106,9 @@ img {
 
     .section4 {
         margin-top: 96px;
+    }
+    .bottom_left h5 {
+        font-size: .8rem;
     }
 }
 
@@ -2126,8 +2178,11 @@ img {
     }
 
     .section8-imgback1 {
-        height: 145px;
-        width: 160px;
+        height: 137px;
+        width: 148px;
+    }
+    .bottom_div {
+        width: 100%;
     }
 
     .img-boxes {
@@ -2136,11 +2191,11 @@ img {
     }
 
     .bottom_left h5 {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     .bottom_right button {
-        font-size: .8rem;
+        font-size: .65rem;
         padding: 4px 8px;
     }
 

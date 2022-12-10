@@ -4320,7 +4320,7 @@ option {
     }
 
     .contact_left p {
-        font-size: 3.6vw;
+        font-size: 1rem;
     }
     .contact_box {
         margin-top: 30px;
@@ -4337,7 +4337,7 @@ option {
     }
     .contact_left h1 {
         padding: 0 !important;
-        font-size: 6vw;
+        font-size: 2rem;
         width: 100%;
     }
     .contact_box {
@@ -4358,12 +4358,7 @@ option {
 
 @media (max-width:420px) {
     .contact_left h1 {
-        font-size: 7vw;
         padding: 0px 0 21px 0;
-    }
-
-    .contact_left p {
-        font-size: 4.4vw;
     }
 
     ::placeholder {
@@ -4391,6 +4386,9 @@ option {
     .contact {
         min-height: 89vh;
     }
+    .contact_left h1 {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width:350px) {
@@ -4411,6 +4409,7 @@ option {
         margin: 0;
         min-height: 84vh;
     }
+    
 }
 
 /* Contact section end */
