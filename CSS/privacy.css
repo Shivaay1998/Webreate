@@ -542,6 +542,9 @@ option {
     .main_right {
         width: 43vw;
     }
+    .topic_bar1, .topic_bar2, .topic_bar3, .topic_bar4, .topic_bar5, .topic_bar6, .topic_bar7, .topic_bar8, .topic_bar9, .topic_bar10, .topic_bar11 {
+        top: 63px;
+    }
 }
 
 @media (max-width:1290px) {
@@ -994,7 +997,7 @@ option {
     .topic_bar9,
     .topic_bar10,
     .topic_bar11 {
-        top: 45px;
+        top: 46px;
     }
 
     .topic_bar p,
@@ -1095,11 +1098,11 @@ option {
     .topic_bar9,
     .topic_bar10,
     .topic_bar11 {
-        top: 50px;
+        top: 46px;
     }
 }
 
-@media (max-width:530px) {
+@media (max-width:540px) {
     .scroller_box {
         width: 52%;
         height: 2.4rem;
@@ -1121,9 +1124,12 @@ option {
     .navbar {
         top: 28px;
     }
+.topic_bar1, .topic_bar2, .topic_bar3, .topic_bar4, .topic_bar5, .topic_bar6, .topic_bar7, .topic_bar8, .topic_bar9, .topic_bar10, .topic_bar11 {
+    top: 51px;
+}
 }
 
-@media (max-width:475px) {
+@media (max-width:486px) {
     .scroller_box {
         width: 77%;
         height: 2rem;
@@ -1185,6 +1191,9 @@ option {
     .topic_bar11 p,
     .topic_bar12 p {
         font-size: 1.3rem;
+    }
+    .topic_bar1, .topic_bar2, .topic_bar3, .topic_bar4, .topic_bar5, .topic_bar6, .topic_bar7, .topic_bar8, .topic_bar9, .topic_bar10, .topic_bar11 {
+        top: 50px;
     }
 }
 
@@ -1249,7 +1258,7 @@ option {
     .topic_bar9,
     .topic_bar10,
     .topic_bar11 {
-        top: 63px;
+        top: 64px;
     }
 }
 
