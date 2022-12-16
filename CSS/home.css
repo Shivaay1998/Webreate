@@ -2630,6 +2630,7 @@ b {
 
     .footer_left {
         width: 100%;
+        padding: 0;
     }
 
     .footer_logo {
@@ -4036,7 +4037,7 @@ b {
 
 .contact {
     width: 100%;
-    min-height: 80vh;
+    padding: 10px 0;
     background-color: var(--primary-color);
     display: flex;
     justify-content: center;
@@ -4209,9 +4210,9 @@ option {
     .contact_right {
         height: 63vh;
     }
-    .contact {
+    /* .contact {
         min-height: 67vh;
-    }
+    } */
     .contact_left h1 {
         font-size: 4vw;
     }
@@ -4258,15 +4259,10 @@ option {
     .contact_right h1 {
         font-size: 3rem;
     }
-    .contact {
+    /* .contact {
         width: 100%;
         min-height: 70vh;
-        background-color: var(--primary-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Josefin Sans', sans-serif;
-    }
+    } */
 }
 
 @media (max-width:612px) {
@@ -4309,7 +4305,8 @@ option {
         width: 100%;
     }
     .contact {
-        min-height: 100vh;
+        padding-top: 20px;
+        height: 87vh;
         align-items: self-start;
     }
 
@@ -4342,9 +4339,6 @@ option {
     }
     .contact_box {
         height: 100%;
-    }
-    .contact {
-        min-height: 84vh;
     }
     .contact_right {
         width: 97%;
@@ -4382,9 +4376,6 @@ option {
     }
     .contact_right form input {
         width: 100%;
-    }
-    .contact {
-        min-height: 89vh;
     }
     .contact_left h1 {
         font-size: 1.6rem;

@@ -851,6 +851,7 @@ body {
 
     .footer_left {
         width: 100%;
+        padding: 0;
     }
 
     .footer_logo {
