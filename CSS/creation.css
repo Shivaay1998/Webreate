@@ -982,7 +982,6 @@ img {
 .section7 {
     margin-left: 18px;
     margin-right: 18px;
-    background-color: red;
 }
 
 .section7-upper p {
@@ -1030,7 +1029,6 @@ img {
     height: fit-content;
     display: flex;
     justify-content: center;
-    background-color: green;
 }
 
 .imgs_five {
@@ -3082,7 +3080,6 @@ option {
         height: 77vh;
         width: 93%;
         margin-bottom: 20px;
-        background-color: red;
     }
 
     .form_box {
